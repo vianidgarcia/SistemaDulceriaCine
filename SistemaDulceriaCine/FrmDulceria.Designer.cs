@@ -41,10 +41,10 @@
             pnlDatos = new Panel();
             lblDatos = new Label();
             panel1 = new Panel();
-            lblExistencias = new Label();
-            numCantidad = new NumericUpDown();
             btnAgregarExistencia = new Button();
             btnDisminuirExistencias = new Button();
+            lblExistencias = new Label();
+            numCantidad = new NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)numPrecio).BeginInit();
             ((System.ComponentModel.ISupportInitialize)numExistencia).BeginInit();
             ((System.ComponentModel.ISupportInitialize)dgvInventario).BeginInit();
@@ -197,24 +197,6 @@
             panel1.Size = new Size(162, 117);
             panel1.TabIndex = 12;
             // 
-            // lblExistencias
-            // 
-            lblExistencias.AutoSize = true;
-            lblExistencias.Font = new Font("Ebrima", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblExistencias.ForeColor = Color.FromArgb(216, 36, 104);
-            lblExistencias.Location = new Point(12, 8);
-            lblExistencias.Name = "lblExistencias";
-            lblExistencias.Size = new Size(141, 15);
-            lblExistencias.TabIndex = 11;
-            lblExistencias.Text = "Existencias del producto";
-            // 
-            // numericUpDown2
-            // 
-            numCantidad.Location = new Point(12, 28);
-            numCantidad.Name = "numericUpDown2";
-            numCantidad.Size = new Size(120, 23);
-            numCantidad.TabIndex = 1;
-            // 
             // btnAgregarExistencia
             // 
             btnAgregarExistencia.BackColor = Color.FromArgb(246, 36, 64);
@@ -245,6 +227,24 @@
             btnDisminuirExistencias.UseVisualStyleBackColor = false;
             btnDisminuirExistencias.Click += btnDisminuirExistencias_Click;
             // 
+            // lblExistencias
+            // 
+            lblExistencias.AutoSize = true;
+            lblExistencias.Font = new Font("Ebrima", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblExistencias.ForeColor = Color.FromArgb(216, 36, 104);
+            lblExistencias.Location = new Point(12, 8);
+            lblExistencias.Name = "lblExistencias";
+            lblExistencias.Size = new Size(141, 15);
+            lblExistencias.TabIndex = 11;
+            lblExistencias.Text = "Existencias del producto";
+            // 
+            // numCantidad
+            // 
+            numCantidad.Location = new Point(12, 28);
+            numCantidad.Name = "numCantidad";
+            numCantidad.Size = new Size(120, 23);
+            numCantidad.TabIndex = 1;
+            // 
             // FrmDulceria
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -258,6 +258,7 @@
             Controls.Add(dgvInventario);
             Controls.Add(pnlDatos);
             Name = "FrmDulceria";
+            ShowIcon = false;
             Text = "Sistema de Dulceria";
             Load += FrmDulceria_Load;
             ((System.ComponentModel.ISupportInitialize)numPrecio).EndInit();
